@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagehehe/iq.jpg" class="image">
+            <h1>Suvandita Swaroop</h1>
+            <p><a href="suvanditaswaroop@gmail.com" color="white">Email: suvanditaswaroop@gmail.com</a> | Phone: 9599311464 | LinkedIn:<a href="https://www.linkedin.com/in/suvandita-swaroop-2b30ab267/">https://www.linkedin.com/in/suvandita-swaroop-2b30ab267/</a></p>
+        </header>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li><button id="but1" onclick="changeContent('about-me','but1')">About Me</button></li>
+                <li><button id="but2" onclick="changeContent('education','but2')">Education</button></li>
+                <li><button id="but3" onclick="changeContent('skills','but3')">Skills</button></li>
+                <li><button id="but4" onclick="changeContent('experience','but4')">Experience</button></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <section id="about-me" class="section" style="display: block;" >
+                <h2>About Me</h2>
+                <p>Greetings! My name is Suvandita Swaroop. I am a 2nd year student in B-Tech Computer Science here at VIT Vellore. As an aspiring technologist, I am deeply passionate about exploring the intricate realms of technology and its endless possibilities. Delve into my CV to learn about my background and expertise.</p>
+            </section>
+            
+            <section id="education" class="section" style="display: none;">
+                <h2>Education</h2>
+                <ul>
+                    <li>BTECH Computer Science VIT Vellore(2022-Present)</li>
+                    <li>Delhi Public School- High School(2011-2022)</li>
+                </ul>
+            </section>
+             
+            <section id="skills" class="section" style="display: none;">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C and C++</li> 
+                    <li>Python</li> 
+                    <li>Java</li>
+                    <li>HTML</li> 
+                    <li>CSS</li> 
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+            
+            <section id="experience" class="section" style="display:none;">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Chairperson of Innovator's Quest (Jan 2024 - Present)</li>
+                    <p>As the club chairperson, I gained qualites of strong leadership by managing all aspects of the club's operations and guiding my members towards achieving common goals. 
+                    I organized and led regular meetings, facilitating discussions and ensuring that everyone had an opportunity to contribute. 
+                    Through strategic planning and effective communication, I fostered a collaborative environment that encouraged creativity and innovation</p>
+                    <li>Point of Contact for Gravitas Event</li>
+                </ul>
+            </section>
+        </div>
+        
+        <footer>
+            <p>CV(Suvandita Swaroop-22BCE3373)</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('about-me').style.display = 'block';
+
+        function changeContent(sectionId,but) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                    
+                    
+
+                } else {
+                    section.style.display ='none';
+
+                }
+            });
+            document.getElementById(but).style.fontWeight='italic';
+            document.getElementById(but).style.color='yellow';
+
+        }
+    </script>
+</body>
+</html>
