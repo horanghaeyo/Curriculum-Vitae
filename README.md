@@ -1,3 +1,3 @@
-# demo
-This is my first Git repository
+# CV
+A webpage for my CV.
 Author: Suvandita
